@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css.css" rel="stylesheet">
+    <title>VENDAS</title>
+</head>
+
+<body>
+
+    <main class="center">
+        <div class="cadPedido">
+            <input id="cod" placeholder="CODIGO" type="number">
+            <input id="qntd" placeholder="QUANTIDADE" type="text">
+            <button id="adicionar">ADICIONAR</button>
+
+
+            <div class="mostra-produto">
+
+            </div>
+
+            <button id="vender">ENCERRAR VENDA</button>
+        </div>
+
+        <div class="carrinho">
+            <table>
+                <ul>
+                    <li>COD</li>
+                    <li>Nome</li>
+                    <li>Quantidade</li>
+                </ul>
+            </table>
+        </div>
+    </main>
+
+    <script src="./js/api-vendas.js"></script>
+</body>
+
+</html>

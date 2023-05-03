@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main class="transacoes">
+
+        <div class="nav">
+
+            <nav class="menu-item">
+                <img src="./src/app/estoque.png">
+                <p>Estoque</p>
+            </nav>
+
+            <nav class="menu-item active">
+                <img src="./src/app/transacoes.png">
+                <p>Transações</p>
+            </nav>
+
+            <nav class="menu-item">
+                <img src="./src/app/caixa.png">
+                <p>CAIXA</p>
+            </nav>
+        </div>
+
+        <section class="transactions">
+            <div class="container">
+
+                <div class="table">
+                    <div class="table-header">
+
+                        <div class="header__item"><a id="name" class="filter__link" href="#">Código</a>
+                        </div>
+                        <div class="header__item"><a id="wins" class="filter__link filter__link--number"
+                                href="#">Produto</a></div>
+                        <div class="header__item"><a id="transaction" class="filter__link filter__link--number"
+                                href="#">Transação</a></div>
+                        <div class="header__item"><a id="draws" class="filter__link filter__link--number"
+                                href="#">Quantidade</a></div>
+                        <div class="header__item"><a id="losses" class="filter__link filter__link--number" href="#">Data
+                                de alteração</a>
+                        </div>
+                        <div class="header__item"><a id="total" class="filter__link filter__link--number"
+                                href="#">VALOR</a></div>
+                    </div>
+                    <div class="table-content">
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/api-transacoes.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

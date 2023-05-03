@@ -1,0 +1,7 @@
+Lembrar de instalar o electron Globalmente..
+
+COMANDO ELECTRON: NPM RUN START,
+PARA TRANSFORMAR EM ARQUIVO DESKTOP: PKG .
+
+BUGS A RESOLVER:
+PUT, ETC
