@@ -1,15 +1,17 @@
 {
-  "name": "testeexe",
+  "name": "Estoque",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projeto estoque com Node, Electron, sequelize e mysql",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js",
-    "start": "electron ."
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "keywords": [],
-  "author": "",
+  "author": "Lucca Lopes",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",

@@ -107,7 +107,7 @@ document.querySelector('#atualizar').addEventListener('click', () => {
 
 
 function attEstoque(id, qntd) {
-    fetch('/api/' + id, {
+    fetch('http://localhost:3000/api/' + id, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
@@ -122,10 +122,10 @@ function attEstoque(id, qntd) {
                 find(codigo.value)
                 location.reload()
             } else {
-                alert('erro ao atualizar registo');
+                alert('erro ao atualizar registo' + response);
             }
         })
-        .catch(error => console.error('Erro ao atualizar:', error));
+        .catch(error => alert('Erro ao atualizar:', error));
 }
 
 //
@@ -158,7 +158,7 @@ function find(cod, onde) {
 //
 
 function attTransacoes(qntd, op, valor) {
-    fetch('/apiTrans', {
+    fetch('http://localhost:3000/apiTrans', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

@@ -154,7 +154,7 @@ async function buscaUm(cod) {
 //registra transacoes
 
 function registraTransacao(val) {
-    fetch('/apiTrans', {
+    fetch('http://localhost:3000/apiTrans', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
